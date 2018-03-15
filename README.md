@@ -45,7 +45,7 @@ of view.
 We will create a `/timer` endpoint that will simply `sleep` for a minute.
 
 The plan then will be to open a browser to our __/timer__ route and then hit
-__Ctrl-C__ during this minute. We should then see our shutdonw period gracefully
+__Ctrl-C__ during this minute. We should then see our shutdown period gracefully
 enforced.
 
 We will specify port 8080, which means the our browser endpoint will be:
@@ -70,7 +70,7 @@ Server shuts down after 15 seconds, as expected. Good!
 
 ## Smoke test
 
-WAIT_TIMEOUT_SECONDS not specified, one request in-flight:
+WAIT_TIMEOUT_SECONDS not specified, no requests in-flight:
 
     $ PORT=8080 go run graceful_shutdown.go 
     2018/03/14 23:42:01 Invalid WAIT_TIMEOUT_SECONDS, setting to 15 seconds
@@ -82,7 +82,7 @@ WAIT_TIMEOUT_SECONDS not specified, one request in-flight:
 Server shuts down immediately. Fine.
 
 
-## Longer timeout
+## Longer timeout, request in-flight
 
 WAIT_TIMEOUT_SECONDS specified, no requests in-flight:
 
@@ -117,6 +117,6 @@ Server shuts down after 30 seconds, as expected. Excellent!
 
 ## Credits
 
-The server code was heavily inspired by:
+The server code was heavily inspired by the excellent Gorilla/Mux:
 
     https://github.com/Gorilla/mux#graceful-shutdown
