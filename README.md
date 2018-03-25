@@ -17,6 +17,17 @@ The `Server.Shutdown` and `Server.Close` methods were added to Golang in
 This code was heavily inspired by the
 [Gorilla/Mux](https://github.com/Gorilla/mux#graceful-shutdown) code.
 
+#### Go versions prior to 1.8
+
+For Go versions prior to __1.8__ there is [graceful](https://github.com/tylerb/graceful).
+
+Full circle: __graceful__ recommends using the [Shutdown](https://golang.org/pkg/net/http/#Server.Shutdown)
+approach listed here for Golang versions __1.8__ and later.
+
+This particular
+[caveat from graceful](https://github.com/tylerb/graceful#important-things-to-note-when-setting-timeout-to-0)
+is well worth a read.
+
 
 ## Principles
 
@@ -111,6 +122,8 @@ Server shuts down after 30 seconds, as expected. Excellent!
 
 ## To Do
 
+- [x] Add notes for __graceful__ for Go versions prior to __1.8__
+- [ ] Investigate edge cases (browser shut down while server timing-out, timeout longer then server sleep)
 - [ ] Research the subject more carefully (Just For Func, etc)
 - [ ] Figure out how to automate the testing
 
