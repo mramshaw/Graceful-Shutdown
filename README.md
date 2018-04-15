@@ -1,5 +1,10 @@
 # Graceful Shutdown
 
+[![Build status](https://travis-ci.org/mramshaw/Graceful-Shutdown.svg?branch=master)](https://travis-ci.org/mramshaw/Graceful-Shutdown)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mramshaw/Graceful-Shutdown?style=flat-square)](https://goreportcard.com/badge/github.com/mramshaw/Graceful-Shutdown)
+[![GoDoc](https://godoc.org/github.com/mramshaw/Simple-REST-API?status.svg)](https://godoc.org/github.com/mramshaw/Simple-REST-API)
+[![GitHub release](https://img.shields.io/github/release/mramshaw/Graceful-Shutdown.svg?style=flat-square)](https://github.com/mramshaw/Graceful-Shutdown/releases)
+
 Gracefully shut down a Golang web server
 
 
@@ -15,7 +20,7 @@ The `Server.Shutdown` and `Server.Close` methods were added to Golang in
 [Go 1.8](https://golang.org/doc/go1.8#http_shutdown).
 
 This code was heavily inspired by the
-[Gorilla/Mux](https://github.com/Gorilla/mux#graceful-shutdown) code.
+[Gorilla/mux](https://github.com/Gorilla/mux#graceful-shutdown) code.
 
 #### Go versions prior to 1.8
 
@@ -45,7 +50,7 @@ We will use the __log__ package to give us our actual event timings.
 
 ## Testing
 
-Almost all of the code came from __Gorilla/Mux__, but how to test that it works?
+Almost all of the code came from __Gorilla/mux__, but how to test that it works?
 
 What I came up with can probably be improved, but it works so I'm happy with
 it for now. What we are really trying to do is model an insiderate __client__,
@@ -130,6 +135,6 @@ Server shuts down after 30 seconds, as expected. Excellent!
 
 ## Credits
 
-The server code was heavily inspired by the excellent Gorilla/Mux:
+The server code was heavily inspired by the excellent Gorilla/mux:
 
     https://github.com/Gorilla/mux#graceful-shutdown
