@@ -2,7 +2,7 @@
 
 [![Build status](https://travis-ci.org/mramshaw/Graceful-Shutdown.svg?branch=master)](https://travis-ci.org/mramshaw/Graceful-Shutdown)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mramshaw/Graceful-Shutdown?style=flat-square)](https://goreportcard.com/badge/github.com/mramshaw/Graceful-Shutdown)
-[![GoDoc](https://godoc.org/github.com/mramshaw/Simple-REST-API?status.svg)](https://godoc.org/github.com/mramshaw/Simple-REST-API)
+[![GoDoc](https://godoc.org/github.com/mramshaw/Graceful-Shutdown?status.svg)](https://godoc.org/github.com/mramshaw/Graceful-Shutdown)
 [![GitHub release](https://img.shields.io/github/release/mramshaw/Graceful-Shutdown.svg?style=flat-square)](https://github.com/mramshaw/Graceful-Shutdown/releases)
 
 Gracefully shut down a Golang web server
