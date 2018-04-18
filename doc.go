@@ -11,3 +11,4 @@
 // 
 // It uses the context package and the Server Shutdown method introduced in Go 1.8.
 //
+package main
