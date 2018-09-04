@@ -53,7 +53,7 @@ We will use the __log__ package to give us our actual event timings.
 Almost all of the code came from __Gorilla/mux__, but how to test that it works?
 
 What I came up with can probably be improved, but it works so I'm happy with
-it for now. What we are really trying to do is model an insiderate __client__,
+it for now. What we are really trying to do is model an inconsiderate __client__,
 however we can actually force the client to be inconsiderate on the __server__
 side, which seems to be a little more satisfactory from a cohesiveness point
 of view.

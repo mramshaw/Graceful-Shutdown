@@ -8,3 +8,6 @@ go:
 
 script:
   - go build graceful_shutdown.go
+
+notifications:
+  email: false
